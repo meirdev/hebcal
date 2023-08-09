@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 1rem;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+caption {
+    padding: 1rem;
+}
+
+caption div[class='gregorian'] {
+    float: right;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+caption div[class='gregorian'] span.month {
+    font-weight: 700;
+}
+
+caption div[class='hebrew'] {
+    float: left;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+caption div[class='hebrew'] span.month {
+    font-weight: 600;
+}
+
+th {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: normal;
+    padding: 0.5rem;
+    border-bottom: 2px solid rgb(209 213 219);
+    background: #fff;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid rgb(209 213 219);
+    height: 100px;
+    vertical-align: top;
+}
+
+td div[class='gregorian'] {
+    float: left;
+    font-weight: 500;
+}
+
+td[data-today] div[class='gregorian'] {
+    color: #fff;
+    background: rgb(220 38 38);
+    text-align: center;
+    border-radius: 9999px;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+td div[class='hebrew'] {
+    float: right;
+    font-weight: 300;
+    color: rgb(107 114 128);
+}
+
+td div.events {
+    clear: both;
+    margin-top: 2rem;
+}
+
+td div.events div {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-top: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    background: rgb(252 231 243);
+    border-radius: 0.5rem;
+    text-align: right;
+}
+
+td div.events div[data-id='test'] {
+    background: rgb(219 234 254);
+}
+
+td div.candle-lighting::before {
+    content: "הדלקת נרות: ";
+}
+
+td div.candle-lighting {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: left;
+}
+
+td div.havdalah::before {
+    content: "הבדלה: ";
+}
+
+td div.havdalah {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: left;
+}
+
+.day-7 {
+    background-color: rgb(243 244 246)
+}
